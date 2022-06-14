@@ -1,0 +1,67 @@
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    width: fit-content;
+    position: relative;
+}
+
+.buttonContainer {
+    position: relative;
+    height: 25px;
+}
+
+#adviceButton {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: inherit;
+    text-align: center;
+    bottom: 0;
+    transition: 300ms;
+}
+
+#adviceButton:hover {
+    box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+.container {
+    background-color: hsl(217, 19%, 24%);
+    width: 90%;
+    max-width: 500px;
+}
+
+#adviceHeading {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+#adviceQuoteStyle {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+.quoteBar2 {
+    display: none;
+}
+
+@media screen and (min-width: 500px){
+    .quoteBar1 {
+        display: none;
+    }
+    .quoteBar2 {
+        display: inline-block;
+    }
+}
